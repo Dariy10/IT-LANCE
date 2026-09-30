@@ -8,7 +8,7 @@ IT-LANCE — сайт услуг для компании/команды, кот�
 
 ### Запуск
 1. Клонировать репозиторий:
-git clone https://github.com/Dariy10/web-project.git
+git clone https://github.com/Dariy10/IT-LANCE.git
 2. Открыть файл `index.html` в браузере (желательно в Chrome/Firefox).
 
 ### Автор
