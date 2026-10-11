@@ -6,7 +6,146 @@
   <title>IT-LANCE — цифровые и IT-услуги</title>
 </head>
 <body>
-  <h1>IT-LANCE</h1>
-  <p>Стартовая страница проекта.</p>
+
+  <header>
+    <a href="/">
+      <img src="assets/images/logo.png" alt="IT-LANCE">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Наши услуги</a></li>
+        <li><a href="#">Статьи</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="#form">Отправить заявку</a>
+    <button type="button">РУС</button>
+  </header>
+
+  <main>
+
+    <section>
+      <h1>IT-АУТСОРСИНГ</h1>
+      <ul>
+        <li>Настройка удаленной работы</li>
+        <li>IT аудит</li>
+        <li>Серверы</li>
+        <li>Облачные технологии</li>
+        <li>Локальные сети</li>
+        <li>Ремонт компьютеров</li>
+        <li>Защита и восстановление информации</li>
+        <li>СКУД</li>
+        <li>Видеонаблюдение</li>
+        <li>мини-АТС</li>
+        <li>Компьютеры: обслуживание и ремонт</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Для кого</h2>
+
+      <article>
+        <h3>Небольшие офисы</h3>
+        <img src="assets/images/small-office.png" alt="Иллюстрация небольшого офиса">
+        <ul>
+          <li>Оптимизируйте издержки на обслуживание IT-инфраструктуры</li>
+          <li>Исключите простой оборудования</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Средние офисы</h3>
+        <img src="assets/images/medium-office.png" alt="Иллюстрация среднего офиса">
+        <ul>
+          <li>Отсутствие затрат на содержание дорогостоящих специалистов</li>
+          <li>Возврат инвестиций в IT-инфраструктуру</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Крупные офисы</h3>
+        <img src="assets/images/large-office.png" alt="Иллюстрация крупного офиса">
+        <ul>
+          <li>Фокусируйтесь на стратегическом развитии компании</li>
+          <li>Оперативно и гибко развивайте IT-инфраструктуру</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Торгово-розничные сети</h3>
+        <img src="assets/images/retail.png" alt="Иллюстрация торгово-розничной сети">
+        <ul>
+          <li>Настройте эффективную работу РРО и учетного оборудования</li>
+          <li>Объедините торговые точки в безопасную IT-экосистему</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Государственные органы и предприятия</h3>
+        <img src="assets/images/government.png" alt="Иллюстрация государственного учреждения">
+        <ul>
+          <li>Получите квалифицированное обслуживание с прозрачной сопроводительной документацией</li>
+          <li>Реализуйте в работе современные проектные решения</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Банки</h3>
+        <img src="assets/images/bank.png" alt="Иллюстрация банка">
+        <ul>
+          <li>Экономьте на обслуживании узкоспециализированных сервисов</li>
+          <li>Обеспечьте максимальный уровень информационной безопасности</li>
+        </ul>
+      </article>
+
+    </section>
+
+
+    <section>
+      <h2>Получите полный аудит IT-системы Вашей организации БЕСПЛАТНО!</h2>
+      <img src="assets/images/engineer.png" alt="Инженер IT-LANCE">
+      <form>
+        <label for="cta-phone-1">Ваш номер телефона</label>
+        <input id="cta-phone-1" name="phone" type="tel" autocomplete="tel" required>
+        <button type="submit">Получить аудит IT-системы</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Получите полный аудит IT-системы Вашей организации БЕСПЛАТНО!</h2>
+      <form>
+        <label for="cta-phone-2">Ваш номер телефона</label>
+        <input id="cta-phone-2" name="phone" type="tel" autocomplete="tel" required>
+        <button type="submit">Получить аудит IT-системы</button>
+      </form>
+    </section>
+
+    <section id="form">
+      <h2>Решим вашу IT-задачу</h2>
+      <form>
+        <label for="contact-name">Меня зовут</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+
+        <label for="contact-phone">Телефон</label>
+        <input id="contact-phone" name="phone" type="tel" autocomplete="tel" required>
+
+        <label for="contact-topic">В данный момент, хочу узнать</label>
+        <input id="contact-topic" name="topic" type="text">
+
+        <label for="contact-message">Пожалуйста, опишите суть Вашего вопроса</label>
+        <textarea id="contact-message" name="message"></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 IT-LANCE</p>
+  </footer>
+
 </body>
 </html>
