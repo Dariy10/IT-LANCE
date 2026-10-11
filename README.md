@@ -6,6 +6,9 @@ IT-LANCE — сайт услуг для компании/команды, кот�
 ### Стек технологий
 * HTML, CSS, JavaScript, PHP, MySQL.
 
+### Макет
+Figma: https://www.figma.com/design/dG5VF11pBpuZB1BZPXkHLz/IT-LANCE--?node-id=6-5936&t=YfTlN9a9ySByZJna-0
+
 ### Запуск
 1. Клонировать репозиторий:
 git clone https://github.com/Dariy10/IT-LANCE.git
