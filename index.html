@@ -123,23 +123,31 @@
     </section>
 
     <section id="form">
-      <h2>Решим вашу IT-задачу</h2>
-      <form>
-        <label for="contact-name">Меня зовут</label>
-        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+  <h2>Решим вашу IT-задачу</h2>
+  <form>
+    <fieldset>
+      <legend>Контактная информация</legend>
 
-        <label for="contact-phone">Телефон</label>
-        <input id="contact-phone" name="phone" type="tel" autocomplete="tel" required>
+      <label for="contact-name">Меня зовут</label>
+      <input id="contact-name" name="name" type="text" autocomplete="name" required>
 
-        <label for="contact-topic">В данный момент, хочу узнать</label>
-        <input id="contact-topic" name="topic" type="text">
+      <label for="contact-phone">Телефон</label>
+      <input id="contact-phone" name="phone" type="tel" autocomplete="tel" required>
+    </fieldset>
 
-        <label for="contact-message">Пожалуйста, опишите суть Вашего вопроса</label>
-        <textarea id="contact-message" name="message"></textarea>
+    <fieldset>
+      <legend>Ваш вопрос</legend>
 
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
+      <label for="contact-topic">В данный момент, хочу узнать</label>
+      <input id="contact-topic" name="topic" type="text">
+
+      <label for="contact-message">Пожалуйста, опишите суть Вашего вопроса</label>
+      <textarea id="contact-message" name="message"></textarea>
+    </fieldset>
+
+    <button type="submit">Отправить</button>
+  </form>
+</section>
 
   </main>
 
