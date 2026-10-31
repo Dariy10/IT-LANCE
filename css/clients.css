@@ -1,0 +1,70 @@
+.clients {
+  padding-block: var(--space-6, 64px);
+}
+
+.clients__title {
+  margin-bottom: var(--space-6, 48px);
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 32px;
+  justify-content: center;
+}
+
+.client-card {
+  display: flex;
+  flex: 1 1 320px;
+  max-width: 350px;
+  flex-direction: column;
+}
+
+.client-card__visual {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-md, 16px);
+
+  background-color: var(--color-surface, #ffffff);
+  box-shadow: 0 10px 30px rgba(0, 110, 220, 0.06);
+}
+
+.client-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.client-card__title {
+  margin: var(--space-4, 32px) 0 var(--space-2, 16px);
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--color-text, #252b36);
+}
+
+.client-card__list {
+  margin: 0;
+  padding-left: 20px;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: var(--color-muted, #5f6c7b);
+}
+
+.client-card__item::marker {
+  font-size: 1.1em;
+
+  color: var(--color-primary, #00bcd4);
+}
+
+.client-card__item + .client-card__item {
+  margin-top: 10px;
+}
