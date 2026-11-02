@@ -1,0 +1,120 @@
+:root {
+--color-primary: #05c3db;
+  --color-primary-hover: #0097a7;
+  --color-dark: #100c2d;
+  --color-text: #252b36;
+  --color-muted: #5f6c7b;
+  --color-bg-page: #f7faff;
+  --color-surface: #ffffff;
+  --color-border: #dbe7f3;
+  --color-focus: #05c3db;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--color-text, #252b36);
+
+  background-color: var(--color-bg-page, #f7faff);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: min(calc(100% - 32px), 1140px);
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+.section-title {
+  margin: 0 0 var(--space-4, 32px);
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--color-text, #252b36);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 24px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill, 9999px);
+
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.button--outline {
+  border-color: var(--color-primary, #00bcd4);
+
+  color: var(--color-primary, #00bcd4);
+
+  background-color: transparent;
+}
+
+.button--outline:hover {
+  background-color: rgba(0, 188, 212, 0.08);
+}
+
+.button--accent {
+  color: #ffffff;
+
+  background-color: var(--color-primary, #00bcd4);
+}
+
+.button--accent:hover {
+  background-color: var(--color-primary-hover, #0097a7);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--color-focus, #00bcd4);
+  outline-offset: 2px;
+}

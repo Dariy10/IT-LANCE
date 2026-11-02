@@ -5,173 +5,226 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT-LANCE — Цифровые и IT-услуги, абонентское обслуживание</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <a href="/" aria-label="IT-LANCE — на главную страницу">
-      <img src="assets/images/logo.png" alt="Логотип IT-LANCE">
-    </a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="/" aria-label="IT-LANCE — на главную страницу">
+        <img src="assets/images/logo.png" alt="Логотип IT-LANCE" width="160" height="40">
+      </a>
 
-    <nav aria-label="Основная навигация">
-      <ul>
-        <!-- позже будет дополненно с появлением других страниц -->
-        <li><a href="#services">Наши услуги</a></li>
-        <li><a href="/articles">Статьи</a></li>
-        <li><a href="/info">Информация</a></li>
-        <li><a href="/about">О нас</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-    </nav>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#services">Наши услуги</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/articles">Статьи</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/info">Информация</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/about">О нас</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
 
-    <a href="#form">Отправить заявку</a>
-    <button type="button" aria-label="Переключить язык интерфейса">РУС</button>
+      <div class="site-header__actions">
+        <a class="button button--outline" href="#form">Отправить заявку</a>
+        <button class="lang-switch" type="button" aria-label="Переключить язык интерфейса">РУС</button>
+      </div>
+    </div>
   </header>
 
   <main>
-
-
-
-
-
-    <section id="services">
-      <h1>IT-аутсорсинг и комплексное обслуживание инфраструктуры</h1>
-      <p>Профессиональная поддержка, защита данных и бесперебойная работа оборудования для бизнеса любого масштаба.</p>
-
-      <h2>Перечень услуг</h2>
-      <ul>
-        <li>Настройка удаленной работы</li>
-        <li>IT аудит</li>
-        <li>Серверы</li>
-        <li>Облачные технологии</li>
-        <li>Локальные сети</li>
-        <li>Ремонт компьютеров</li>
-        <li>Защита и восстановление информации</li>
-        <li>СКУД</li>
-        <li>Видеонаблюдение</li>
-        <li>мини-АТС</li>
-        <li>Компьютеры: обслуживание и ремонт</li>
-      </ul>
-
-      <p><a href="#form">Заказать расчет стоимости</a></p>
+    <section class="services" id="services" aria-labelledby="services-title">
+      <h1 class="visually-hidden" id="services-title">IT-аутсорсинг и комплексное обслуживание инфраструктуры</h1>
+      <div class="services__inner">
+        <img class="services__image" src="assets/images/it-outsourcing.png"
+          alt="Инфографика услуг IT-аутсорсинга IT-LANCE">
+      </div>
     </section>
+    <section class="clients" aria-labelledby="clients-title">
+      <div class="container">
+        <h2 class="section-title clients__title" id="clients-title">ДЛЯ КОГО</h2>
 
-    <section>
-      <h2>Для кого мы работаем</h2>
-      <article>
-        <img src="assets/images/small-office.jpg" alt="Небольшой офис">
-        <h3>Небольшие офисы</h3>
-        <ul>
-          <li>Оптимизируйте издержки на обслуживание IT-инфраструктуры</li>
-          <li>Исключите простой оборудования</li>
-        </ul>
-      </article>
+        <div class="clients__list">
+          <article class="client-card">
+            <div class="client-card__visual">
+              <img class="client-card__image" src="assets/images/small-office.jpg" alt="Небольшой офис" width="100"
+                height="100">
+            </div>
+            <h3 class="client-card__title">НЕБОЛЬШИЕ ОФИСЫ</h3>
+            <ul class="client-card__list">
+              <li class="client-card__item">Оптимизируйте издержки на обслуживание IT-инфраструктуры</li>
+              <li class="client-card__item">Исключите простой оборудования</li>
+            </ul>
+          </article>
 
-      <article>
-        <img src="assets/images/medium-office.jpg" alt="Средний офис">
-        <h3>Средние офисы</h3>
-        <ul>
-          <li>Отсутствие затрат на содержание дорогостоящих специалистов</li>
-          <li>Возврат инвестиций в IT-инфраструктуру</li>
-        </ul>
-      </article>
+          <article class="client-card">
+            <div class="client-card__visual">
+              <img class="client-card__image" src="assets/images/medium-office.jpg" alt="Средний офис" width="100"
+                height="100">
+            </div>
+            <h3 class="client-card__title">СРЕДНИЕ ОФИСЫ</h3>
+            <ul class="client-card__list">
+              <li class="client-card__item">Отсутствие затрат на содержание дорогостоящих специалистов</li>
+              <li class="client-card__item">Возврат инвестиций в IT-инфраструктуру</li>
+            </ul>
+          </article>
 
-      <article>
-        <img src="assets/images/large-office.jpg" alt="Крупный офис">
-        <h3>Крупные офисы</h3>
-        <ul>
-          <li>Фокусируйтесь на стратегическом развитии компании</li>
-          <li>Оперативно и гибко развивайте IT-инфраструктуру</li>
-        </ul>
-      </article>
+          <article class="client-card">
+            <div class="client-card__visual">
+              <img class="client-card__image" src="assets/images/large-office.jpg" alt="Крупный офис" width="100"
+                height="100">
+            </div>
+            <h3 class="client-card__title">КРУПНЫЕ ОФИСЫ</h3>
+            <ul class="client-card__list">
+              <li class="client-card__item">Фокусируйтесь на стратегическом развитии компании</li>
+              <li class="client-card__item">Оперативно и гибко развивайте IT-инфраструктуру</li>
+            </ul>
+          </article>
 
-      <article>
-        <img src="assets/images/retail.jpg" alt="Торгово-розничная сеть">
-        <h3>Торгово-розничные сети</h3>
-        <ul>
-          <li>Настройте эффективную работу РРО и учетного оборудования</li>
-          <li>Объедините торговые точки в безопасную IT-экосистему</li>
-        </ul>
-      </article>
-      <article>
-        <img src="assets/images/government.jpg" alt="Государственное учреждение">
-        <h3>Государственные органы и предприятия</h3>
-        <ul>
-          <li>Получите квалифицированное обслуживание с прозрачной сопроводительной документацией</li>
-          <li>Реализуйте в работе современные проектные решения</li>
-        </ul>
-      </article>
-      <article>
-        <img src="assets/images/bank.jpg" alt="Банк">
-        <h3>Банки</h3>
-        <ul>
-          <li>Экономьте на обслуживании узкоспециализированных сервисов</li>
-          <li>Обеспечьте максимальный уровень информационной безопасности</li>
-        </ul>
-      </article>
+          <article class="client-card">
+            <div class="client-card__visual">
+              <img class="client-card__image" src="assets/images/retail.jpg" alt="Торгово-розничная сеть" width="100"
+                height="100">
+            </div>
+            <h3 class="client-card__title">ТОРГОВО-РОЗНИЧНЫЕ СЕТИ</h3>
+            <ul class="client-card__list">
+              <li class="client-card__item">Настройте эффективную работу РРО и учетного оборудования</li>
+              <li class="client-card__item">Объедините торговые точки в безотказную IT-экосистему</li>
+            </ul>
+          </article>
 
-    </section>
+          <article class="client-card">
+            <div class="client-card__visual">
+              <img class="client-card__image" src="assets/images/government.jpg" alt="Государственное учреждение"
+                width="100" height="100">
+            </div>
+            <h3 class="client-card__title">ГОСУДАРСТВЕННЫЕ ОРГАНЫ И ПРЕДПРИЯТИЯ</h3>
+            <ul class="client-card__list">
+              <li class="client-card__item">Получите квалифицированное обслуживание с прозрачной сопроводительной
+                документацией</li>
+              <li class="client-card__item">Реализуйте в работе современные проектные решения</li>
+            </ul>
+          </article>
 
-
-
-
-    <section>
-      <h2>Получите полный аудит IT-системы Вашей организации БЕСПЛАТНО!</h2>
-      <figure>
-        <img src="assets/images/engineer.png" alt="Сервисный инженер компании IT-LANCE">
-      </figure>
-
-      <form action="/leads" method="post">
-        <label for="cta-phone-1">Ваш номер телефона</label>
-        <input id="cta-phone-1" name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
-        <button type="submit">Получить аудит IT-системы</button>
-      </form>
-    </section>
-    <section>
-      <h2>Получите экспресс-аудит IT-системы перед началом сотрудничества</h2>
-
-      <form action="/leads" method="post">
-        <label for="cta-phone-2">Ваш номер телефона</label>
-        <input id="cta-phone-2" name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
-        <button type="submit">Получить аудит IT-системы</button>
-      </form>
-    </section>
-
-    <section id="form">
-      <h2>РЕШИМ ВАШУ IT - ЗАДАЧУ</h2>
-
-      <form action="/feedback" method="post">
-        <div>
-          <label for="contact-name">Меня зовут</label>
-          <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required>
+          <article class="client-card">
+            <div class="client-card__visual">
+              <img class="client-card__image" src="assets/images/bank.jpg" alt="Банк" width="100" height="100">
+            </div>
+            <h3 class="client-card__title">БАНКИ</h3>
+            <ul class="client-card__list">
+              <li class="client-card__item">Экономьте на обслуживании узкоспециализированных сервисов</li>
+              <li class="client-card__item">Обеспечьте максимальный уровень информационной безопасности</li>
+            </ul>
+          </article>
         </div>
-
-        <div>
-          <label for="contact-phone">телефон</label>
-          <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="Ваш номер телефона"
-            required>
-        </div>
-
-        <div>
-          <label for="contact-message">в данный момент, хочу узнать</label>
-          <textarea id="contact-message" name="message" rows="5" placeholder="Пожалуйста, опишите суть Вашего вопроса"
-            required></textarea>
-        </div>
-
-        <button type="submit">Отправить</button>
-      </form>
+      </div>
     </section>
+
+    <section class="cta-banner" aria-labelledby="cta-title-1">
+      <div class="container">
+        <div class="cta-banner__card cta-banner__card--engineer">
+
+          <div class="cta-banner__visual">
+            <div class="cta-banner__avatar">
+              <img class="cta-banner__photo" src="assets/images/engineer.png" alt="Сервисный инженер компании IT-LANCE"
+                width="220" height="220">
+            </div>
+
+            <div class="cta-banner__badge" aria-hidden="true">
+              <img class="cta-banner__badge-icon" src="assets/images/audit-icon.png" alt="" width="38" height="38">
+            </div>
+          </div>
+
+          <div class="cta-banner__body">
+            <h2 class="cta-banner__title" id="cta-title-1">
+              Получите полный аудит IT-системы Вашей организации <strong>БЕСПЛАТНО!</strong>
+            </h2>
+
+            <form class="cta-form" action="/leads" method="post">
+              <label class="visually-hidden" for="cta-phone-1">Ваш номер телефона</label>
+              <input class="cta-form__input" id="cta-phone-1" name="phone" type="tel" autocomplete="tel"
+                placeholder="Ваш номер телефона" required>
+              <button class="button button--accent cta-form__submit" type="submit">Получить аудит IT-системы</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner" aria-labelledby="cta-title-2">
+      <div class="container">
+        <div class="cta-banner__card cta-banner__card--compact">
+
+          <div class="cta-banner__info">
+            <img class="cta-banner__laptop-img" src="assets/images/laptop-audit.png" alt="" width="56" height="56">
+
+            <h2 class="cta-banner__title cta-banner__title--compact" id="cta-title-2">
+              Получите полный аудит IT-системы<br>
+              Вашей организации <strong>БЕСПЛАТНО!</strong>
+            </h2>
+          </div>
+
+          <form class="cta-form" action="/leads" method="post">
+            <label class="visually-hidden" for="cta-phone-2">Ваш номер телефона</label>
+            <input class="cta-form__input" id="cta-phone-2" name="phone" type="tel" autocomplete="tel"
+              placeholder="Ваш номер телефона" required>
+            <button class="button button--accent cta-form__submit" type="submit">Получить аудит IT-системы</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+    <section class="feedback" id="form" aria-labelledby="feedback-title">
+      <div class="container feedback__inner">
+        <div class="feedback__card">
+          <h2 class="feedback__title" id="feedback-title">РЕШИМ ВАШУ IT - ЗАДАЧУ</h2>
+
+          <form class="feedback-form" action="/feedback" method="post">
+            <div class="feedback-form__row">
+              <div class="feedback-form__field">
+                <label class="feedback-form__label" for="contact-name">Меня зовут</label>
+                <input class="feedback-form__input feedback-form__input--name" id="contact-name" name="name" type="text"
+                  autocomplete="name" placeholder="Ваше имя" required>
+              </div>
+
+              <div class="feedback-form__field">
+                <label class="feedback-form__label" for="contact-phone">телефон</label>
+                <input class="feedback-form__input feedback-form__input--phone" id="contact-phone" name="phone"
+                  type="tel" autocomplete="tel" placeholder="Ваш номер телефона" required>
+              </div>
+            </div>
+
+            <div class="feedback-form__field feedback-form__field--message">
+              <label class="feedback-form__label feedback-form__label--center" for="contact-message">
+                в данный момент, хочу узнать
+              </label>
+              <textarea class="feedback-form__textarea" id="contact-message" name="message" rows="4"
+                placeholder="Пожалуйста, опишите суть Вашего вопроса" required></textarea>
+            </div>
+
+            <button class="button button--accent feedback-form__submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer id="contacts">
-    <h2>Контакты</h2>
-     <address>
-      <p>Телефон: <a href="tel:+78000000000">+7 (800) 000-00-00</a></p>
-      <p>Email: <a href="mailto:info@it-lance.ru">info@it-lance.ru</a></p>
-     </address>
-    <p>© <time datetime="2026">2026</time> IT-LANCE</p>
-
+  <footer class="site-footer" id="contacts">
+    <div class="container site-footer__inner">
+      <div class="site-footer__contacts">
+        <h2 class="site-footer__heading">Контакты</h2>
+        <address class="site-footer__address">
+          <p class="site-footer__item">Телефон: <a class="site-footer__link" href="tel:+78000000000">+7 (800)
+              000-00-00</a></p>
+          <p class="site-footer__item">Email: <a class="site-footer__link"
+              href="mailto:info@it-lance.ru">info@it-lance.ru</a></p>
+        </address>
+      </div>
+      <p class="site-footer__copyright">© <time datetime="2026">2026</time> IT-LANCE</p>
+    </div>
   </footer>
 
 </body>
