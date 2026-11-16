@@ -7,7 +7,7 @@
 
   border-radius: var(--radius-lg, 24px);
 
-  color: #ffffff;
+  color: var(--color-surface, #ffffff);
   background-color: var(--color-dark, #100c2d);
   box-shadow: 0 15px 40px rgba(16, 12, 45, 0.2);
 }
@@ -63,11 +63,12 @@
 .cta-banner__avatar {
   width: 100%;
   height: 100%;
+  margin: 0;
   overflow: hidden;
   border: 3.5px solid var(--color-primary, #05c3db);
   border-radius: 50% 50% 0 50%;
 
-  background-color: #ffffff;
+  background-color: var(--color-surface, #ffffff);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -90,12 +91,12 @@
   justify-content: center;
   width: 76px;
   height: 76px;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--color-surface, #ffffff);
   border-radius: 50% 0 50% 50%;
   outline: 2px solid var(--color-primary, #05c3db);
   outline-offset: 2px;
 
-  background-color: #05c3db;
+  background-color: var(--color-primary, #05c3db);
   box-shadow: 0 8px 20px rgba(5, 195, 219, 0.35);
 }
 
@@ -120,14 +121,14 @@
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
 
-  color: #ffffff;
+  color: var(--color-surface, #ffffff);
 }
 
 .cta-banner__title strong {
   font-weight: 700;
 }
-
 
 .cta-banner__card--compact {
   display: flex;
@@ -162,8 +163,9 @@
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
 
-  color: #ffffff;
+  color: var(--color-surface, #ffffff);
 }
 
 .cta-banner__title--compact strong {
@@ -190,15 +192,15 @@
 
   font-size: 15px;
 
-  color: #ffffff;
-  background-color: #2b264d;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%238a85a8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z'%3E%3C/path%3E%3C/svg%3E");
+  color: var(--color-surface, #ffffff);
+  background-color: var(--color-dark-input, #2b264d);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23a49fc2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 18px center;
 }
 
 .cta-form__input::placeholder {
-  color: #8a85a8;
+  color: var(--color-dark-placeholder, #a49fc2);
 }
 
 .cta-form__input:focus-visible {
@@ -212,6 +214,11 @@
   padding: 0 30px;
 
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
+}
+
+.cta-form__submit:focus-visible {
+  outline: 3px solid var(--color-surface, #ffffff);
+  outline-offset: 3px;
 }

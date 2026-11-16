@@ -44,12 +44,12 @@
 }
 
 .main-nav__link:hover {
-  color: var(--color-primary, #00bcd4);
+  color: var(--color-primary-dark, #007a8c);
 }
 
 .main-nav__link:focus-visible,
 .site-header__logo:focus-visible {
-  outline: 3px solid var(--color-focus, #00bcd4);
+  outline: 3px solid var(--color-focus-dark, #007a8c);
   outline-offset: 4px;
 }
 
@@ -67,7 +67,7 @@
   font-size: 14px;
   font-weight: 600;
 
-  color: var(--color-muted, #5f6c7b);
+  color: var(--color-muted, #525e6b);
 
   background-color: transparent;
 
@@ -75,12 +75,12 @@
 }
 
 .lang-switch:hover {
-  border-color: var(--color-primary, #00bcd4);
+  border-color: var(--color-primary-dark, #007a8c);
 
-  color: var(--color-primary, #00bcd4);
+  color: var(--color-primary-dark, #007a8c);
 }
 
 .lang-switch:focus-visible {
-  outline: 3px solid var(--color-focus, #00bcd4);
+  outline: 3px solid var(--color-focus-dark, #007a8c);
   outline-offset: 2px;
 }

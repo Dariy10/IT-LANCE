@@ -2,14 +2,14 @@
   padding-block: 36px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 
-  color: #8c9cb5;
+  color: var(--color-dark-muted, #98a6be);
   background-color: var(--color-dark, #100c2d);
 }
 
 .site-footer__inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: var(--space-3, 24px);
   align-items: center;
   justify-content: space-between;
 }
@@ -17,7 +17,7 @@
 .site-footer__contacts {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 28px;
+  gap: var(--space-2, 16px) 28px;
   align-items: center;
 }
 
@@ -29,7 +29,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--color-surface, #ffffff);
 }
 
 .site-footer__address {
@@ -50,7 +50,7 @@
   font-weight: 500;
   text-decoration: none;
 
-  color: #ffffff;
+  color: var(--color-surface, #ffffff);
 
   transition: color 0.2s ease;
 }
@@ -60,7 +60,7 @@
 }
 
 .site-footer__link:focus-visible {
-  outline: 2px solid var(--color-primary, #05c3db);
+  outline: 2px solid var(--color-focus, #05c3db);
   outline-offset: 4px;
 }
 
@@ -69,5 +69,5 @@
 
   font-size: 13px;
 
-  color: #637188;
+  color: var(--color-dark-muted, #98a6be);
 }

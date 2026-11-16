@@ -3,7 +3,7 @@
 }
 
 .clients__title {
-  margin-bottom: var(--space-6, 48px);
+  margin-bottom: var(--space-5, 48px);
 }
 
 .clients__list {
@@ -44,7 +44,9 @@
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.04em;
+  overflow-wrap: anywhere;
 
   color: var(--color-text, #252b36);
 }
@@ -56,13 +58,13 @@
   font-size: 14px;
   line-height: 1.6;
 
-  color: var(--color-muted, #5f6c7b);
+  color: var(--color-muted, #525e6b);
 }
 
 .client-card__item::marker {
   font-size: 1.1em;
 
-  color: var(--color-primary, #00bcd4);
+  color: var(--color-primary, #05c3db);
 }
 
 .client-card__item + .client-card__item {
