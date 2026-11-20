@@ -1,0 +1,17 @@
+.services {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.services__inner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.services__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
