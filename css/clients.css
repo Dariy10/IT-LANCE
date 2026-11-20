@@ -7,17 +7,15 @@
 }
 
 .clients__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 48px 32px;
-  justify-content: center;
 }
 
 .client-card {
   display: flex;
-  flex: 1 1 320px;
-  max-width: 350px;
   flex-direction: column;
+  min-width: 0;
 }
 
 .client-card__visual {
