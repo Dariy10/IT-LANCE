@@ -100,6 +100,17 @@ img {
   text-decoration: none;
 
   cursor: pointer;
+  transform: translateY(0);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-2px);
 }
 
 .button--outline {
@@ -127,4 +138,13 @@ img {
 .button:focus-visible {
   outline: 3px solid var(--color-focus-dark, #007a8c);
   outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .button:hover,
+  .button:focus-visible {
+    transform: none;
+    transition: none;
+  }
 }
